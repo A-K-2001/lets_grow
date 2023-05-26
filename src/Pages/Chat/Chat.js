@@ -158,7 +158,7 @@ const Chat = () => {
                         </div>
                         <div class="inbox_chat">
 
-                            {conversation.map((c) => (
+                            {conversation?.map((c) => (
                                 <div onClick={() => setCurrentChat(c)} >
                                     <Inbox conversation={c} active={c?._id === currentChat?._id} />
                                 </div>
@@ -172,7 +172,7 @@ const Chat = () => {
                         <div class="mesgs">
                             <div class="msg_history">
                                 {
-                                    message.map((m) => (
+                                    message?.map((m) => (
                                         <div ref={scrollref}>
                                             <Masg message={m} own={m.sender === user} />
                                         </div>
