@@ -1,8 +1,9 @@
-import axios from 'axios';
+
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { Inboxitem } from '../Masg/inbox item/Inboxitem'
 import {format} from "timeago.js"
+import { publicRequest } from '../../requestMethods';
 
 export const Inbox = (conversation,active) => {
 
@@ -26,11 +27,11 @@ export const Inbox = (conversation,active) => {
             const getuser = async()=>{
                 try{
                         if(type=="in"){
-                                const res = await axios.get("/api/company/"+auser);
+                                const res = await publicRequest.get("/company/"+auser);
                                 // console.log(res.data.username);
                                 setUser(res.data);
                         }else{
-                            const res = await axios.get("/api/investor/"+auser);
+                            const res = await publicRequest.get("/investor/"+auser);
                             // console.log(res);
                             setUser(res.data);
 
@@ -47,7 +48,7 @@ export const Inbox = (conversation,active) => {
         const id = conversation.conversation._id;
             const getuser = async()=>{
                 try{
-                       const res = await axios.get("/api/message/"+id);
+                       const res = await publicRequest.get("/message/"+id);
                         setLast(res.data[res.data.length-1]);
                        
                 }catch(err){

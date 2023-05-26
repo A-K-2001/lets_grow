@@ -1,4 +1,4 @@
-import axios from 'axios'
+
 import React, { useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { Inbox } from '../../Components/inbox/Inbox'
@@ -10,6 +10,7 @@ import { io } from "socket.io-client"
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 import { useNavigate } from 'react-router-dom';
+import { publicRequest } from '../../requestMethods';
 
 const Chat = () => {
 
@@ -73,7 +74,7 @@ const Chat = () => {
     useEffect(() => {
         const getconversation = async () => {
             try {
-                const res = await axios.get("/api/conversation/" + user);
+                const res = await publicRequest.get("/conversation/" + user);
                 setconversation(res.data);
             } catch (err) {
                 console.log(err);
@@ -90,7 +91,7 @@ const Chat = () => {
     useEffect(() => {
         const getmassages = async () => {
             try {
-                const res = await axios.get("/api/message/" + currentChat?._id);
+                const res = await publicRequest.get("/message/" + currentChat?._id);
                 setMessage(res.data);
                 // console.log(res);
             } catch (err) {
@@ -119,7 +120,7 @@ const Chat = () => {
 
         try {
 
-            const res = await axios.post("/api/message/", { conversationId: currentChat?._id, text, sender: user });
+            const res = await publicRequest.post("/message/", { conversationId: currentChat?._id, text, sender: user });
             setMessage([...message, res.data]);
             setText("");
 

@@ -12,7 +12,6 @@ import Header from "../../Components/Header/Header";
 
 // import { devURL, mailformat } from "../../../utils";
 
-const axios = require("axios");
 const bcrypt = require("bcryptjs");
 var salt = bcrypt.genSaltSync(10);
 
