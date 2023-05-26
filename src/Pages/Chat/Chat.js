@@ -172,7 +172,7 @@ const Chat = () => {
                         <div class="mesgs">
                             <div class="msg_history">
                                 {
-                                    message.map(m => (
+                                    message.map((m) => (
                                         <div ref={scrollref}>
                                             <Masg message={m} own={m.sender === user} />
                                         </div>
