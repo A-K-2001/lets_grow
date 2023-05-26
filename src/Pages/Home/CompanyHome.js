@@ -126,7 +126,7 @@ const CompanyHome = () => {
                                     <p class="mt-4 text-sm text-gray-500">
                                         {item.gender === 'M' ? <span>Mr </span> : <span>Mrs </span>}{item.username} wants to invest <b>{item.amount}</b>  in companys related to <b>{item.category}</b> industry.{item.gender === 'M' ? <span>He </span> : <span>She </span>}{item.investedbefore === true ? <span>have also invested before in many companies.</span> : <span>is a new investor.</span>}
                                     </p>
-                                    <button onClick={()=>handleClick(item)} class="cursor-pointer bg-themeColor-500 hover:bg-themeColor-400 text-white font-bold mt-5 -mb-5 py-1 px-4 border-b-4 border-themeColor-700 hover:border-themeColor-500 rounded">
+                                    <button onClick={()=>handleClick(item)} class="cursor-pointer bg-gray-500 hover:bg-gray-400 text-white font-bold mt-5 -mb-5 py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded">
                                         Click here to connect
                                     </button>
 

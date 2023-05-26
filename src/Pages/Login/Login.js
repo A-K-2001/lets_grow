@@ -33,7 +33,7 @@ const Login = () => {
                             >
                                 <p class="text-lg font-bold text-gray-700">Company</p>
                                 <p class="mt-4 text-sm text-gray-500">
-                                    ScopeX believes that transparent, competitive pricing helps people save money when sending money home. The ScopeX platform makes it easy for people to make a better choice. Their support team is great to work with and fast.
+                                    Let's Groww allows you to expand your network and meet potential investors and business partners from around the world. With our networking events and community, you can share your ideas and collaborate with like-minded professionals.
                                 </p>
                             </blockquote>
                         </div>
@@ -52,7 +52,7 @@ const Login = () => {
                                 >
                                     <p class="text-lg font-bold text-gray-700">Investor</p>
                                     <p class="mt-4 text-sm text-gray-500">
-                                        Scopex is an excellent platform for money transfer to companies and transfer to Indian customers. It delivers on its mission of making exchange rate easy, affordable and transparent. The team is fair and very responsive to everyone's needs
+                                    Let's Groww allows you to expand your network and incredible people have been able to expand my network in ways you never thought possible. we highly recommend it to all entrepreneurs and investors out here.
                                     </p>
                                 </blockquote>
                             </div>

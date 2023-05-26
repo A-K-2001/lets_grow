@@ -204,7 +204,7 @@ const InvestorHome = () => {
                     Last year profit was <b>{item.profit}</b> and last year sales where around <b>{item.sales}</b>.it hase a evolution of <b>{item.evolution}</b> from last round.
                     Company wants to disolve <b>{item.equity}</b> of equity.
                   </p>
-                  <button class="cursor-pointer bg-themeColor-500 hover:bg-themeColor-400 text-white font-bold mt-5 -mb-5 py-1 px-4 border-b-4 border-themeColor-700 hover:border-themeColor-500 rounded"
+                  <button class="cursor-pointer bg-gray-500 hover:bg-gray-400 text-white font-bold mt-5 -mb-5 py-1 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded"
                     onClick={() => handleClick(item)}>
                     Click here to start chat
                   </button>

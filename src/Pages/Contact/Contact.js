@@ -118,7 +118,7 @@ export default function Contact() {
             <div className="flex justify-center">
               <p>
                 or directly contact us via{" "}
-                <a href="mailto:contact@scopex.money" className="underline">
+                <a href="mailto:letsgroww2001@gmail.com" className="underline">
                 letsgroww2001@gmail.com
                 </a>
               </p>

@@ -65,7 +65,7 @@ export default function InvestorLogin() {
             const res = await publicRequest.post("/auth/investorlogin",{username:val.username,password:val.password});
             toast.success("Login Successfully.");
             dispatch(loginSuccess(res.data));
-            toast.success("Login Successfully.");
+            // toast.success("Login Successfully.");
         }catch(err){
             // console.log(err);
             toast.error("Invalid username or password.");
@@ -190,7 +190,7 @@ export default function InvestorLogin() {
             </div>
             <div className="text-center border-t-2 border-solid border-gray-300 ">
               <div className="mt-1">
-                New to Scopex?{" "}
+                New to Let's groww?{" "}
                 <span style={{ color: "#246eaa" }}>
                   {" "}
                   <Link to="/SignUp">

@@ -61,7 +61,7 @@ export default function CompanyLogin() {
         const res = await publicRequest.post("/auth/companylogin",{username:val.username,password:val.password});
         toast.success("Login Successfull");
         dispatch(loginSuccess(res.data));
-        toast.success("Login Successfull");
+        // toast.success("Login Successfull");
 
     }catch(err){
         toast.error("Invalid Credentials");
@@ -184,7 +184,7 @@ export default function CompanyLogin() {
             </div>
             <div className="text-center border-t-2 border-solid border-gray-300 ">
               <div className="mt-1">
-                New to Scopex?{" "}
+                New to Lets'groww?{" "}
                 <span style={{ color: "#246eaa" }}>
                   {" "}
                   <Link to="/SignUp">
