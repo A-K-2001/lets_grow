@@ -70,7 +70,7 @@ export default function Header() {
               >
               
                 Lets's Groww !
-                <img src="/images/logo.png" className="w-48 h-15 p-1" alt="" />
+                <img src="/Images/logo.jpeg" className="h-10 w-10" alt="" />
               </Link>
             </div>
             <div className="hidden md:block font-nunito md:basis-3/4">

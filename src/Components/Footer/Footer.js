@@ -16,7 +16,7 @@ export default function Footer() {
               <div className="sm:w-1/2 md:w-1/2 h-auto">
                 <div className="text-orange mb-6 font-semibold">
                   <a className="flex title-font font-medium items-center justify-start text-white">
-                    <img src="/images/logo.png" className="w-48 h-15" alt="" />
+                    <img src="/Images/logo.jpeg" className="w-10 h-10" alt="" />
                   </a>
                   <p className="mt-2 text-lg text-white">
                     Let's groww !
