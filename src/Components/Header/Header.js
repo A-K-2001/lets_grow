@@ -69,8 +69,8 @@ export default function Header() {
                 className=" font-bold text-white flex items-center gap-2"
               >
               
-                Lets's Groww !
                 <img src="/Images/logo.jpeg" className="h-10 w-10" alt="" />
+                Lets's Groww !
               </Link>
             </div>
             <div className="hidden md:block font-nunito md:basis-3/4">
